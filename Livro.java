@@ -11,6 +11,8 @@ public class Livro implements Item {
     private double estrelas; 
     private Usuario usuarioAtual; 
     private File capa; 
+    
+    // consigo editar
   
     public Livro(String titulo, String autor, String editora, String genero, 
             String versao, Usuario doador) { 
