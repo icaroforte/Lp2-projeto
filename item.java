@@ -1,24 +1,20 @@
-public interface Item { 
+public abstract class Item { 
   
-    public void favorita(); 
+    private String nome; 
+    private String historicoUsuario;
+    private Usuario usuarioAtual;
+    private int numDeEmprestimos;
+    private double estrelas;
+    private Calendar date;
   
-    public Usuario getUsuarioAtual(); 
-  
-    /** 
-     * Altera o detentor atual do objeto para um novo. 
-     *  
-     * @param usuario 
-     *            - Objeto da classe Usuario. 
-     */
-  
-    public void setUsuarioAtual(Usuario usuario); 
-  
-    /** 
-     * A categoria do item que está sendo tratado. 
-     *  
-     * @return String - o tipo do objeto. Ex:(software, livro, apostila, 
-     *         documentario, e etc). 
-     */
-    public String tipo(); 
-  
+    
+   public Item(String nome, Usuario doador){
+	   
+	   this.nome = nome;
+	   this.doador = doador;
+   }
+   
+    
+   
+   
 } 
