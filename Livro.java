@@ -39,6 +39,9 @@ public class Livro implements Item {
   
     } 
   
+    /*
+     * testando
+     */
     public Livro(String titulo, String autor, String editora, String genero, 
             String versao, Usuario doador, File capa) 
             throws FileNotFoundException { 
