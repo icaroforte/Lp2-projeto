@@ -2,6 +2,7 @@ import excecoes.TamanhoSenhaException;
   
 public class Usuario { 
   
+    //testando Egit
     private String nome; 
     private String senha; 
     private String email; 
