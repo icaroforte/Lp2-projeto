@@ -15,6 +15,7 @@ public abstract class Item implements Pesquisavel {
 	   
 	   this.nome = nome;
 	   this.usuarioAtual = usuarioAtual;
+	   date = Calendar.getInstance();
 	   numDeEmprestimos = 1;
 	   numDeFavoritar = 0;
    }
@@ -46,9 +47,6 @@ public double getEstrelas() {
 	return estrelas;
 }
 
-public void setEstrelas(double estrelas) {
-	this.estrelas = estrelas;
-}
 
 public String getNome() {
 	return nome;
