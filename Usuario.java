@@ -4,6 +4,7 @@ public class Usuario {
   
     //testando Egit conseguindo por hora
 	//Testando outra parte
+	//Segundo teste
     private String nome; 
     private String senha; 
     private String email; 
