@@ -3,6 +3,7 @@ import excecoes.TamanhoSenhaException;
 public class Usuario { 
   
     //testando Egit conseguindo por hora
+	//Testando outra parte
     private String nome; 
     private String senha; 
     private String email; 
