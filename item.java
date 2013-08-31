@@ -20,6 +20,11 @@ public abstract class Item implements Pesquisavel {
 	   numDeFavoritar = 0;
    }
    
+  /*
+   * metodo para favoritar o item, ele é void porque substitui diretamente o valor da variável "estrelas".
+   * Tive de criar uma outra variável que é pra contabilizar quantas vezes este item já foi favoritado
+   * começando em 0 e acrescentando 1 a medida que alguém quer favorita-lo!
+   */
 public void Favoritar (int valor){
 	
 	numDeFavoritar += 1;   
@@ -59,6 +64,5 @@ public int getNumDeEmprestimos() {
 public Calendar getDate() {
 	return date;
 }
-    
    
 } 
