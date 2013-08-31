@@ -6,6 +6,7 @@ public abstract class Item implements Pesquisavel {
     private String historicoUsuario;
     private Usuario usuarioAtual;
     private int numDeEmprestimos;
+    private int numDeFavoritar;
     private double estrelas;
     private Calendar date;
   
@@ -15,14 +16,14 @@ public abstract class Item implements Pesquisavel {
 	   this.nome = nome;
 	   this.usuarioAtual = usuarioAtual;
 	   numDeEmprestimos = 1;
-	   
+	   numDeFavoritar = 0;
    }
    
-public double Favoritar (int valor){
-	   
-   double novovalor = (estrelas + valor) / numDeEmprestimos;
+public void Favoritar (int valor){
+	
+	numDeFavoritar += 1;   
+    estrelas = (estrelas + valor) / numDeFavoritar;
    
-   		return novovalor;
    }
 
 public String getHistoricoUsuario() {
