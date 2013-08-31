@@ -2,7 +2,6 @@ import excecoes.TamanhoSenhaException;
   
 public class Usuario { 
   
-    private String algarobatest;
     private String nome; 
     private String senha; 
     private String email; 
